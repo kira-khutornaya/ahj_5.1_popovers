@@ -5,13 +5,13 @@ jest.setTimeout(50000); // default puppeteer timeout
 describe('Tooltip', () => {
   let browser = null;
   let page = null;
-  const baseUrl = 'http://localhost:8888/';
+  const baseUrl = 'https://kira-khutornaya.github.io/ahj_5.1_popovers/';
 
   beforeAll(async () => {
     browser = await puppetteer.launch({
-      headless: false, // show gui
-      slowMo: 250,
-      devtools: true, // show devTools
+      // headless: false, // show gui
+      // slowMo: 250,
+      // devtools: true, // show devTools
     });
     page = await browser.newPage();
   });
